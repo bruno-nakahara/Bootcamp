@@ -10,7 +10,7 @@ const empresa = {
     }
 }
 
-//console.log(`A empresa ${empresa.nome} está localizada em ${empresa.endereço.Rua}, ${empresa.endereço.numero}`)
+console.log(`A empresa ${empresa.nome} está localizada em ${empresa.endereço.Rua}, ${empresa.endereço.numero}`)
 
 //Vetores e Objetos
 
@@ -23,4 +23,4 @@ const programador = {
     ]
 }
 
-console.log(`O usuário ${programador.nome} tem ${programador.idade} anos e usa a tecnologia ${programador.propriedades[1].nome} com especialidade em ${programador.propriedades[1].especialidade}`)
+console.log(`O usuário ${programador.nome} tem ${programador.idade} anos e usa a tecnologia ${programador.propriedades[0].nome} com especialidade em ${programador.propriedades[0].especialidade}`)
