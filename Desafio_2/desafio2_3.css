@@ -1,0 +1,209 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+:root {
+    --color-rocket: #9966ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Página principal */
+body {
+    background: #2F4F4F;
+}
+
+header {
+    text-align: right;
+    margin: 0;
+    padding: 30px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+a {
+    margin: 15px;
+    color: rgba(176, 224, 230, 0.7);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(216, 191, 216, 0.7);
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Página "Sobre" */
+
+.grid-company {
+    display: grid;
+    grid-template-columns: 250px auto auto;
+    margin: 30px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-logo img {
+    height: 200px;
+    width: 230px;
+    border-radius: 100%;
+    border: chartreuse solid 2px;
+}
+
+.grid-description {
+    text-align: center;
+}
+
+.grid-description h1 {
+    margin-bottom: 15px;
+    color: var(--color-rocket);
+}
+
+.grid-description p {
+    line-height: 20px;
+    color: var(--color-rocket);
+    font-weight: bold;
+}
+
+.grid-tecnologies {
+    text-align: center;
+    line-height: 20px;
+}
+
+.grid-tecnologies h3 {
+    margin-top: 10px;
+    color: var(--color-rocket);
+}
+
+.grid-tecnologies ul {
+    margin-top: 10px;
+    color: var(--color-rocket);
+    padding: 0;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer a {
+    text-align: center;
+    border-bottom: 1px solid rgba(176, 224, 230, 0.7);
+    line-height: 10px;
+}
+
+#footer a:hover {
+    transition: 500ms;
+    color: var(--color-rocket);
+}
+
+/* Página Conteúdos */
+.wrapper {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.cards {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 30px auto;
+    
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    color: rgba(176, 224, 230, 0.7);
+    
+}
+
+.image-container {
+    margin: 0 auto;
+    width: 80%;
+    height: 72%;
+    
+}
+
+.card-content {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.card-price {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+/* Modal */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.modal {
+    background: white;
+    width: 70%;
+    height: 80%;
+    margin: 5vh auto;
+    position: relative;
+}
+.modal .maximize-modal {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    cursor: pointer;
+    color: rgba(176, 224, 230, 0.7);
+}
+
+.modal .close-modal {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+/* Modal Active */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.modal.maximize {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+iframe {
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
