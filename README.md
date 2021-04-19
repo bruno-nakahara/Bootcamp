@@ -1,4 +1,4 @@
-# Bootcamp - Rocketseat - Luanchbase
+# Bootcamp - Rocketseat - Launchbase
 
 Repository for codes created during bootcamp.
 
