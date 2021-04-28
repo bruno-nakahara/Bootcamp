@@ -1,11 +1,11 @@
 # Bootcamp - Rocketseat - Launchbase
 
-Repository for codes created during bootcamp.
+Repository created for bootcamp.
 
-##Technology
+## Technology
 
 Here are some Technologies used in this project.
 
-*Javascript
-*HTML
-*CSS
+- Javascript
+- HTML
+- CSS
